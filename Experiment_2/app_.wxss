@@ -1,0 +1,8 @@
+/**app.wxss**/
+.container{
+  height:80vh;                 /*高度为100视窗，写成100%无效*/
+  display:flex;                 /*flex布局模型*/
+  flex-direction:column;        /*垂直布局*/
+  align-items:center;           /*水平方向居中*/
+  justify-content:space-around; /*调整间距*/
+}

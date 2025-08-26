@@ -1,0 +1,106 @@
+/* 地区选择器样式 */
+picker {
+  font-size: 36rpx;
+  color: #4A6FA5;
+  padding: 15rpx 25rpx;
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  margin-bottom: 60rpx;
+  margin-top: 40rpx;
+  transition: all 0.3s ease;
+}
+
+picker:hover {
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.08);
+}
+
+picker view {
+  display: flex;
+  align-items: center;
+}
+
+picker view::after {
+  content: "▼";
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  color: #888;
+}
+
+/* 温度和天气文本样式 */
+.temp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+temp-text {
+  font-size: 90rpx;
+  font-weight: 500;
+  color: #2C4A6F;
+  margin-right: 20rpx;
+}
+
+weather-text {
+  font-size: 42rpx;
+  color: #4A6FA5;
+  align-self: flex-end;
+  margin-bottom: 15rpx;
+}
+
+/* 天气图标样式 */
+image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 10rpx 0 30rpx 0;
+  transition: transform 0.3s ease;
+}
+
+image:hover {
+  transform: scale(1.05);
+}
+
+/* 多行天气样式 */
+.detail {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx 15rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.07);
+  margin-top: 60rpx;
+}
+
+/* 单元行样式 */
+.bar {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+
+/* 单元格样式 */
+.box {
+  width: 33.3%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+/* 标题单元格样式 */
+.box.title {
+  color: #6B8BB7;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+
+/* 数据单元格样式 */
+.box.data {
+  color: #2C4A6F;
+  font-size: 40rpx;
+}
+
+/* 分隔线 */
+.divider {
+  height: 1rpx;
+  width: 90%;
+  background-color: #f0f2f5;
+  margin: 5rpx auto;
+}
